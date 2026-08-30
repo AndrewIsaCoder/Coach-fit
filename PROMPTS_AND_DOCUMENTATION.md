@@ -9,7 +9,7 @@
 * **Scop:** O platformă modernă dedicată antrenorilor personali și atleților pentru planificarea, atribuirea și monitorizarea în timp real a antrenamentelor și progresului de forță.
 * **Tehnologii:** React 18, React Router v6, Supabase (Database & Auth), Vite.
 * **Link Aplicație Live:** `https://pulsefit-coach.netlify.app` *(sau link-ul tău de pe Vercel/Netlify)*
-* **Link GitHub Repository:** `https://github.com/AndrewIsaCoder/pulsefit-coach`
+* **Link GitHub Repository:** `https://github.com/AndrewIsaCoder/Coach-fit`
 
 ---
 
