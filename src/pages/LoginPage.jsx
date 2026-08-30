@@ -91,7 +91,7 @@ export default function LoginPage({ onLogin }) {
 
         <div style={{ textAlign: "center", marginTop: "24px", fontSize: "0.9rem", color: "var(--text-secondary)" }}>
           Don't have an account yet?{" "}
-          <Link to="/register" style={{ color: "var(--accent-green)", fontWeight: "600", textDecoration: "none" }}>
+          <Link to="/register" style={{ color: "var(--accent-green)", fontWeight: "500", textDecoration: "none" }}>
             Create one here
           </Link>
         </div>

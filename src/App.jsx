@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AmbientBackground from "./components/AmbientBackground";
+import CustomCursor from "./components/CustomCursor";
+import GridLines from "./components/GridLines";
 import DashboardPage from "./pages/DashboardPage";
 import ClientsPage from "./pages/ClientsPage";
 import ClientDetailsPage from "./pages/ClientDetailsPage";
@@ -32,6 +35,9 @@ export default function App() {
 
   return (
     <div className="app-wrapper">
+      <AmbientBackground />
+      <GridLines />
+      <CustomCursor />
       <Navbar user={user} onLogout={() => setUser(null)} />
       <main className="main-content">
         <Routes>

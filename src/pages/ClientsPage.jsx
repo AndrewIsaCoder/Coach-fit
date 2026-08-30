@@ -124,7 +124,7 @@ export default function ClientsPage() {
                   </div>
                 </div>
 
-                <div style={{ textAlign: "right", color: "var(--accent-green)", fontSize: "0.9rem", fontWeight: "700" }}>
+                <div style={{ textAlign: "right", color: "var(--accent-green)", fontSize: "0.9rem", fontWeight: "500" }}>
                   View Full Regimen &rarr;
                 </div>
               </Link>

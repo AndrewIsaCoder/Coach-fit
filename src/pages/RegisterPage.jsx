@@ -109,7 +109,7 @@ export default function RegisterPage({ onLogin }) {
 
         <div style={{ textAlign: "center", marginTop: "24px", fontSize: "0.9rem", color: "var(--text-secondary)" }}>
           Already have an account?{" "}
-          <Link to="/login" style={{ color: "var(--accent-green)", fontWeight: "600", textDecoration: "none" }}>
+          <Link to="/login" style={{ color: "var(--accent-green)", fontWeight: "500", textDecoration: "none" }}>
             Sign in here
           </Link>
         </div>

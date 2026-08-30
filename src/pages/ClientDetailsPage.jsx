@@ -59,7 +59,7 @@ export default function ClientDetailsPage() {
   return (
     <div>
       <div style={{ marginBottom: "20px" }}>
-        <Link to="/clients" style={{ color: "var(--accent-green)", textDecoration: "none", fontWeight: "600" }}>
+        <Link to="/clients" style={{ color: "var(--accent-green)", textDecoration: "none", fontWeight: "500" }}>
           &larr; Back to Athletes Directory
         </Link>
       </div>
@@ -74,7 +74,7 @@ export default function ClientDetailsPage() {
               height: "90px",
               borderRadius: "50%",
               objectFit: "cover",
-              border: "3px solid var(--accent-green)"
+              border: "1px solid rgba(232, 185, 138, 0.5)"
             }}
             onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150"; }}
           />
@@ -102,23 +102,23 @@ export default function ClientDetailsPage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "16px" }}>
           <div>
             <div style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>Total Assigned</div>
-            <div style={{ fontSize: "1.6rem", fontWeight: "800" }}>{workouts.length}</div>
+            <div style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: "400" }}>{workouts.length}</div>
           </div>
           <div>
             <div style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>Completed</div>
-            <div style={{ fontSize: "1.6rem", fontWeight: "800", color: "var(--accent-green)" }}>
+            <div style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: "400", color: "var(--accent-green)" }}>
               {completedCount}
             </div>
           </div>
           <div>
             <div style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>Pending</div>
-            <div style={{ fontSize: "1.6rem", fontWeight: "800", color: "var(--accent-orange)" }}>
+            <div style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: "400", color: "var(--accent-orange)" }}>
               {workouts.length - completedCount}
             </div>
           </div>
           <div>
             <div style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>Cumulative Volume</div>
-            <div style={{ fontSize: "1.6rem", fontWeight: "800", color: "var(--accent-blue)" }}>
+            <div style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: "400", color: "var(--accent-blue)" }}>
               {totalVolume.toLocaleString()} kg
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function ClientDetailsPage() {
               <tbody>
                 {workouts.map((w) => (
                   <tr key={w.id}>
-                    <td style={{ fontWeight: "700" }}>{w.exercise_name}</td>
+                    <td style={{ fontWeight: "500" }}>{w.exercise_name}</td>
                     <td>
                       <span className={`client-tag tag-${w.muscle_group?.toLowerCase() || "strength"}`}>
                         {w.muscle_group}

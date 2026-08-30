@@ -114,12 +114,12 @@ export default function WorkoutsPage() {
                     <td>
                       <Link
                         to={`/clients/${w.client_id}`}
-                        style={{ color: "var(--accent-blue)", fontWeight: "600", textDecoration: "none" }}
+                        style={{ color: "var(--accent-blue)", fontWeight: "500", textDecoration: "none" }}
                       >
                         {w.client_name}
                       </Link>
                     </td>
-                    <td style={{ fontWeight: "700" }}>{w.exercise_name}</td>
+                    <td style={{ fontWeight: "500" }}>{w.exercise_name}</td>
                     <td>
                       <span className={`client-tag tag-${w.muscle_group?.toLowerCase() || "strength"}`}>
                         {w.muscle_group}

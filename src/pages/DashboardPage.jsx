@@ -106,7 +106,7 @@ export default function DashboardPage() {
                     onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150"; }}
                   />
                   <div>
-                    <div style={{ fontWeight: "700", fontSize: "0.95rem" }}>{client.full_name}</div>
+                    <div style={{ fontWeight: "500", fontSize: "0.95rem" }}>{client.full_name}</div>
                     <div style={{ fontSize: "0.8rem", color: "var(--text-secondary)" }}>{client.fitness_goal}</div>
                   </div>
                 </div>
@@ -169,12 +169,12 @@ export default function DashboardPage() {
                     <td>
                       <Link
                         to={`/clients/${workout.client_id}`}
-                        style={{ color: "var(--accent-blue)", fontWeight: "600", textDecoration: "none" }}
+                        style={{ color: "var(--accent-blue)", fontWeight: "500", textDecoration: "none" }}
                       >
                         {workout.client_name}
                       </Link>
                     </td>
-                    <td style={{ fontWeight: "700" }}>{workout.exercise_name}</td>
+                    <td style={{ fontWeight: "500" }}>{workout.exercise_name}</td>
                     <td>
                       <span className={`client-tag tag-${workout.muscle_group?.toLowerCase() || "strength"}`}>
                         {workout.muscle_group}
